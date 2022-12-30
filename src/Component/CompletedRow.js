@@ -10,7 +10,7 @@ const CompletedRow = ({ t }) => {
     const navigate = useNavigate();
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/completed/${id}`, {
+        fetch(`https://task-seven-flame.vercel.app/completed/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
@@ -27,7 +27,7 @@ const CompletedRow = ({ t }) => {
             email: user.email
 
         }
-        fetch(`http://localhost:5000/tasks`,
+        fetch(`https://task-seven-flame.vercel.app/tasks`,
             {
                 method: 'post',
                 headers: {
@@ -42,7 +42,7 @@ const CompletedRow = ({ t }) => {
             )
     }
     const handleDlt = (id) => {
-        fetch(`http://localhost:5000/completed/${id}`, {
+        fetch(`https://task-seven-flame.vercel.app/completed/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

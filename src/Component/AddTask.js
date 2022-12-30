@@ -17,7 +17,7 @@ const AddTask = () => {
             email: user.email
         }
         console.log(mytask);
-        fetch(`http://localhost:5000/tasks`,
+        fetch(`https://task-seven-flame.vercel.app/tasks`,
             {
                 method: 'post',
                 headers: {

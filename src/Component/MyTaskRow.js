@@ -20,7 +20,7 @@ const MyTaskRow = ({ t }) => {
             details,
             email: user.email
         }
-        fetch(`http://localhost:5000/completed`,
+        fetch(`https://task-seven-flame.vercel.app/completed`,
             {
                 method: 'post',
                 headers: {
@@ -36,7 +36,7 @@ const MyTaskRow = ({ t }) => {
             )
     }
     function handleDelete(id) {
-        fetch(`http://localhost:5000/tasks/${id}`, {
+        fetch(`https://task-seven-flame.vercel.app/tasks/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

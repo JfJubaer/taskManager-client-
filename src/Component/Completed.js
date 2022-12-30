@@ -7,7 +7,7 @@ const Completed = () => {
     const { user } = useContext(AuthContext);
     const [tasks, setTasks] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/completed/${user.email}`)
+        fetch(`https://task-seven-flame.vercel.app/completed/${user.email}`)
             .then(res => res.json())
             .then(data => setTasks(data))
     }, [user.email])
